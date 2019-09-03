@@ -1,0 +1,20 @@
+<div style="padding-top: 65px;">
+
+    <form [formGroup]="form" (ngSubmit)="submit(form.value)">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="email" class="mt-5 pt-5">Message:</label>
+                <input type="text" formControlName="Message" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="col-md-12" style="padding-top:30px; padding-left: 30px">
+<div *ngFor="let item of data">
+    {{item}}
+
+</div>
+</div>   
